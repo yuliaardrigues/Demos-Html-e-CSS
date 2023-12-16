@@ -107,23 +107,23 @@ body{
 }
 .row-one{
   position: absolute;
-  background-color: #98d8b8;
+  background-color: #ffff;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   top: -110px;
   left: -12px;
-  box-shadow: 10px 10px #8f6f0f, 25px 15px #3f0e80, 40px 18px #ee7e15, 54px 15px #db21b3;
+  box-shadow: 10px 10px #ffff, 25px 15px #ffff, 40px 18px #ffff, 54px 15px #ffff;
 }
 .row-two{
   position: absolute;
-  background-color: #e0cd93;
+  background-color: #ffff;
   border-radius: 50px;
   width: 10px;
   height: 10px;
   left: -42px;
   top: -40px;
-  box-shadow: 10px 10px #481992, 25px 17px #e41919, 40px 24px #dda80a, 55px 30px #e21c5e, 70px 30px #b157e6, 85px 29px #ebb30b, 100px 25px #643703, 112px 20px #e9d8a6;
+  box-shadow: 10px 10px #ffff, 25px 17px #ffff, 40px 24px #ffff, 55px 30px #ffff, 70px 30px #ffff, 85px 29px #ffff, 100px 25px #ffff, 112px 20px #ffff;
 }
 .balls{
   position: absolute;
