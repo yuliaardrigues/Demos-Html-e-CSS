@@ -23,50 +23,36 @@ body{
     translateY:(0) translateX(0);
   }
   100% {
-    transform: translateY(100vh) translateX(100vw);
-  }
+    transform: translateY(100vh) translateX(100vw);}
 }
 .snowfall:nth-child(2) {
   left: 10vw;
-  animation-duration: 8s;
-}
-
+  animation-duration: 8s;}
 .snowfall:nth-child(3) {
   left: 20vw;
-  animation-duration: 10s;
-}
-
+  animation-duration: 10s;}
 .snowfall:nth-child(4) {
   left: 30vw;
-  animation-duration: 12s;
-}
-
+  animation-duration: 12s;}
 .snowfall:nth-child(6) {
   left: 40vw;
-  animation-duration: 15s;
-}
+  animation-duration: 15s;}
 .snowfall:nth-child(7) {
   left: 60vw;
-  animation-duration: 17s;
-}
+  animation-duration: 17s;}
 .snowfall:nth-child(8) {
   left: 80vw;
-  animation-duration: 19s;
-}
+  animation-duration: 19s;}
 .snowfall:nth-child(9) {
   left: 90vw;
-  animation-duration: 22s;
-}
+  animation-duration: 22s;}
 .snowfall:nth-child(10) {
   left: 100vw;
-  animation-duration: 24s;
-}
-
+  animation-duration: 24s;}
 .christmas-tree{
   position: relative;
   top: 60px;
-  cursor: pointer;
-}
+  cursor: pointer;}
 .tree{
   position:absolute;
   width: 20px;
@@ -96,7 +82,6 @@ body{
   top: -180px;
   left: -65px;
 }
-
 .tree-details:before{
   content: "";
   position: absolute;
@@ -104,9 +89,10 @@ body{
   border-radius: 50%;
   width: 5px;
   height: 5px;
-  top: -10px;
-  left: 20px;
-  box-shadow: 50px -50px #1077a0, 32px -70px #d41585, 40px -130px #cde20b, 70px -5px #a16565,  85px -75px #ac940f;
+  top: -30px;
+  left: -2px;
+  box-shadow: 5px -40px #1077a0, 1px -15px #d41585, 12px -130px #cde20b, 50px -10px #a16565,  15px -75px #ac940f;
+  z-index: 1;
 }
 
 .lights{
@@ -114,13 +100,11 @@ body{
   opacity: 0;
   animation: light 2s linear, drop 1s linear .5s forwards;
 }
-
 @keyframes light {
   0%{filter: drop-shadow(0 0 2px #b4a01a) brightness(1);}
   50%{filter: drop-shadow(0 0 5px #0a975c)brightness(1.35);}
   100%{filter: drop-shadow(0 0 2px #270f92)brightness(1);}
 }
-
 .row-one{
   position: absolute;
   background-color: #98d8b8;
@@ -128,10 +112,9 @@ body{
   width: 10px;
   height: 10px;
   top: -110px;
-  left: -15px;
+  left: -12px;
   box-shadow: 10px 10px #8f6f0f, 25px 15px #3f0e80, 40px 18px #ee7e15, 54px 15px #db21b3;
 }
-
 .row-two{
   position: absolute;
   background-color: #e0cd93;
@@ -140,21 +123,19 @@ body{
   height: 10px;
   left: -42px;
   top: -40px;
-  box-shadow: 10px 10px #481992, 25px 17px #e41919, 40px 24px #dda80a, 55px 28px #0b991e, 70px 30px #b157e6, 85px 29px #ebb30b, 100px 25px #643703, 112px 20px #e9d8a6;
+  box-shadow: 10px 10px #481992, 25px 17px #e41919, 40px 24px #dda80a, 55px 30px #e21c5e, 70px 30px #b157e6, 85px 29px #ebb30b, 100px 25px #643703, 112px 20px #e9d8a6;
 }
-
 .balls{
   position: absolute;
-  background-color: #0fdb20;
+  background-color: #05b613;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   z-index: 2;
   opacity: 0;
   box-shadow: -20px -55px #d0fd04, 25px -70px #990b16;
-  animation: drop 1s linear 1s forwards ;
+  animation: drop 1s linear 1s forwards;
 }
-
 .balls:before{
   content: "";
   position: absolute;
@@ -164,62 +145,62 @@ body{
   border-radius: 50px;
   left: -40px;
   top: -10px;
+  z-index: 1;
   box-shadow: 100px 10px #180ad8, 25px -80px #f30519, 60px -120px #f70505;
-
 }
-
 .balls:after{
   content: "";
   position: absolute;
-  background-color: #94d2bd;
+  background-color: #1b3b31;
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  left: -40px;
-  top: 40px;
-  box-shadow: -35px -35px #036112, -35px -105px #94d2bd, -60px 45px #45da20;
+  left: 50px;
+  top: -60px;
+  z-index: 1;
+  box-shadow: -20px -52px #50ce5c, -45px -80px #94d2bd, -30px 20px #f19659;
 }
 .star {
   position: absolute;
   display: block;
   width: 0;
   height: 0;
-  border-right: 25px solid transparent;
-  border-bottom: 17.5px solid #f9c819;
+  border-right: 20px solid transparent;
+  border-bottom: 18px solid #f9c819;
   border-left: 25px solid transparent;
-  transform: rotate(-35deg);
-  top: -190px;
-  left: -9px;
+  transform: rotate(-25deg); /* Reduced overall tilt */
+  top: -200px;
+  left: -10px;
   opacity: 0;
   animation: dropStar 1s linear 1.5s forwards;
 }
-.star:before{
-border-bottom: 30px solid #f9c819;
-border-left: 15px solid transparent;
-position: absolute;
-height: 2;
-width: 2;
-top: -13px;
-left: -18px;
-display: block;
-content: "";
-transform: rotate(-35deg);
+
+.star:before {
+  border-bottom: 25px solid #f9c819;
+  border-left: 10px solid transparent;
+  position: absolute;
+  height: 6px;
+  width: 2px;
+  top: -15px;
+  left: -18px;
+  display: block;
+  content: "";
+  transform: rotate(-45deg); 
 }
 
-.star:after{
+.star:after {
   position: absolute;
   display: block;
   width: 0px;
   height: 0px;
-  border-right: 21px solid transparent;
-  border-bottom: 18px solid #f9c819;
-  border-left: 26px solid transparent;
-  transform: rotate(-70deg);
-  top: 1px;
-  left: -27px;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f9c819;
+  border-left: 25px solid transparent;
+  transform: rotate(-75deg); 
+  top: 2px;
+  left: -25px;
   content: "";
 }
-
 @keyframes drop {
   0% {
     transform: translateY(-470px)scaleY(0.9);
@@ -238,54 +219,30 @@ transform: rotate(-35deg);
       100%{
         transform: translateY(0px)scaleY(1);
         opacity: 1;
-      }
-  }
-
+      }}
   @keyframes dropStar {
-    0% {
-      transform: translateY(-470%) scaleY(0.9) rotate(-35deg);
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(0px) scaleY(1) rotate(-35deg);
-      opacity: 1;
-    }
-    65% {
-      transform: translateY(-15px) scaleY(0.9) rotate(-35deg);
-      opacity: 1;
-    }
-    75% {
-      transform: translateY(-18px) scaleY(0.9) rotate(-35deg);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(0) scaleY(1) rotate(-35deg);
-      opacity: 1;
-    }
+    0% {transform: translateY(-470%) scaleY(0.9) rotate(-40deg); opacity: 0;}
+    5% {opacity: 1;}
+    50% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+    65% {transform: translateY(-15px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+    75% {transform: translateY(-18px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+    100% {transform: translateY(0) scaleY(1) rotate(-35deg); opacity: 1;}
   }
-
   .shadow{
     position: absolute;
     border-radius: 50%;
     background-color: rgba(0,0,0,0.7);
     width: 50px;
-    height: 20px;
+    height: 10px;
     z-index: -1;
-    top: -10px;
-    left: -10px;
-    animation: scale .5s linear forwards;
-  }
-
+    top: 50px;
+    left: -15px;
+    animation: scale .5s linear forwards;}
   @keyframes scale{
     0% {
-      transform: scaleX(1);
-    }
+      transform: scaleX(1);}
     100% {
-      transform: scaleX(3);
-    }
+      transform: scaleX(3);}
   }
 
  
