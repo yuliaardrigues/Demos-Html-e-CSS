@@ -168,7 +168,7 @@ body{
   border-right: 20px solid transparent;
   border-bottom: 18px solid #f9c819;
   border-left: 25px solid transparent;
-  transform: rotate(-25deg); /* Reduced overall tilt */
+  transform: rotate(-25deg); 
   top: -200px;
   left: -10px;
   opacity: 0;
@@ -176,8 +176,8 @@ body{
 }
 
 .star:before {
-  border-bottom: 25px solid #f9c819;
-  border-left: 10px solid transparent;
+  border-bottom: 28px solid #f9c819;
+  border-left: 12px solid transparent;
   position: absolute;
   height: 6px;
   width: 2px;
@@ -194,7 +194,7 @@ body{
   width: 0px;
   height: 0px;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid #f9c819;
+  border-bottom: 18px solid #f9c819;
   border-left: 25px solid transparent;
   transform: rotate(-75deg); 
   top: 2px;
